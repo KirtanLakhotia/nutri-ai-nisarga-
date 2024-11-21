@@ -19,3 +19,6 @@ def hello_print():
     #   response = model.generate_content(prompt,generation_config=generation_config)
     return {"hello":response.text}
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=4000)
